@@ -61,19 +61,31 @@ During your turn, recommendations are intentionally compact:
 
 The Goblin may be overworked, but it remains professional during draft hours.
 
-## Test
+## Validation Tests
 
-The prompt was successfully run through a complete:
+The Draft Goblin was manually tested through two complete FantasyPros Draft Wizard mock drafts using the submitted prompt.
 
-- 12-team league
+| Draft Slot | Draft Score | Result |
+| --- | ---: | --- |
+| 6 | 84/100 | Completed all 15 rounds; successfully recovered from one `already taken` recommendation |
+| 8 | 89/100 | Completed all 15 rounds with no controller or state-tracking errors |
+
+Both tests used:
+
+- 12 teams
 - Snake draft
 - Half-PPR scoring
 - 15 rounds
-- Draft slot 6
+- 1 QB / 2 RB / 2 WR / 1 TE / 1 FLEX / 1 K / 1 DST
+- 6 bench spots
 
-using FantasyPros Draft Wizard.
+Across the two tests, The Draft Goblin averaged **86.5/100**.
 
-The Draft Goblin completed the full draft, recovered successfully from an already-drafted recommendation, and produced an **84/100 FantasyPros Draft Score**.
+The second draft finished with an **89/100 (B+) FantasyPros grade** and was projected **4th of 12 teams overall**.
+
+These were unofficial validation runs using FantasyPros' available opponent logic and are not the contest's official evaluation.
+
+Draft Goblin grievance: Two full 15-round mock drafts were completed without overtime pay, meal breaks, or dental coverage. Management has acknowledged the complaint and assigned another mock draft.
 
 ## Files
 
